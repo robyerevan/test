@@ -7,7 +7,7 @@ script:
   - docker images robyerevan/node
 
 before_deploy:
-  - docker login -u robyerevan -p Robbob66
+  - docker login -u robyerevan -p "ZsAY7=by&ZYi)6?"
 
 deploy:
   provide: script
