@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t robyerevan/node .
   - docker images robyerevan/node
+
+before_deploy:
+  - docker login -u robyerevan -p Robbob66
+
+deploy:
+  provide: script
+  script: docker push robyerevan/node
+  on:
+    branch: master
